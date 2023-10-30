@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-SL-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Nandhini portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/adc27e9ac7.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h3>Hi, I'm <span>Nandhini</span><br></h3>
+                </div>
+            </div>
+        </div>
+
+<!-------------about------------------>
+
+        <div id="about">
+            <div class="container">
+                <div class="raw">
+                    <div class="about-col1">
+                        <img src="images/ia.jpg" alt="">
+                    </div>
+                    <div class="about-col2">
+                        <h2 class="subtitle"><b>About me</b></h2>
+       <p>I'm confident and hardworking person with
+         positive attitude.My objectives is to
+ gaining knowledge and work experiences.I am enthusiastic and ready to contribute my skills and dedication as a fresher.
+</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Programming</span><br>C,Java</li>
+                                    <li><span>Web Development</span><br>Frontend and Backend Development</li>
+                        
+                                </ul>
+                            </div>
+
+                            <!-- <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Work Experience</span><br>2020 to present with Uni projects and my own projects</li>
+                                    
+                                </ul>
+                            </div> -->
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Degree</span><br>Bachelor Of Engineering(CSE) at KIOT</li>
+                                    <!-- <li><span>Advanced Level</span><br>Commerce <br>Econ - <span>A</span> <br> Accounts - <span>A</span> <br>Business Studies - <span>A</span></li> -->
+                                    
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+     <!--------------Services---------------->  
+     
+     <div id="services">
+
+        <div class="container">
+            <h2 class="subtitle">My Skills</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating comprehensive creative web pages that meet customer needs at fair value.</p>
+                    <a href="#">Learn more</a>
+                </div>
+               
+                <div>
+                    <!-- <i class="fa-brands fa-android" ></i> -->
+                    <h2>Blockchain</h2>
+                    <p>Creating basic dapps</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+
+     </div>
+     
+
+
+<!-------------portfolio------------------------>
+    
+<div id="portfolio">
+    <div class="container">
+
+        <h2 class="subtitle">My Project</h2>
+        <div class="work-list">
+
+           
+            <div class="work">
+                <img src="images/web1.jpg">
+                <div class="layer">
+                    <h3>Web App</h3>
+                    <p>Lbrary ManagementSystem project.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/web2.jpg">
+                <div class="layer">
+                    <h3>DApp</h3>
+                    <p>Banking System</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    
+    </div>
+
+</div>
+
+<!--------Contact----------->
+
+<div id="contact">
+
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="subtitle">Contact Me</h2>
+                <p> <i class="fa-solid fa-envelope"></i>nandhiniKcse@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-button"></i>+91 8248645716</p>
+                <!-- <p id="u">Social media below to contact me for your needs</p> -->
+                <div class="social-icons">
+                   
+                   
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                   
+                </div>
+                <p>Nandhini.K</p>
+                <a href="My.Pa.Cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+
+        
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Nandy.</p>
+    </div>
+
+</div>
+
+
+
+
+    <!--------------Js---------------->
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+    </script>
+
+    </body>
+
+</html>
