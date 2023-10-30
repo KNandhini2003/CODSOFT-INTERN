@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Netflix + Zomato</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="netflix-logo.png" alt="Netflix Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Netflix + Zomato</h1>
+            <p>Your one-stop entertainment and food destination</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </header>
+    <section class="featured-content">
+        <h2>Featured Shows</h2>
+        <!-- Add featured content here -->
+    </section>
+    <section class="restaurant-discovery">
+        <h2>Discover Great Food</h2>
+        <!-- Add restaurant discovery content here -->
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="zomato-logo.png" alt="Zomato Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    /* background: #da2424; */
+    background-image: url("movie.jpg");
+    background-size: cover;
+    color: white;
+    padding: 20px 0;
+}
+background-image{
+    opacity: 20%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-decoration: solid; */
+}
+
+.p{
+    font-weight:bolder ;
+}
+.logo img {
+    height: 40px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+   
+    color: #fff;
+    font-weight: bold;
+}
+.menu a:hover{
+    text-decoration: underline solid white; /* Add a dashed underline on hover */
+}
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* .featured-content {
+    Style as needed */
+/* .restaurant-discovery {
+    Style as needed 
+}  */
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Add this to your styles.css */
+.restaurant-listings {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.restaurant-card {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.restaurant-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.restaurant-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.featured-content {
+    display: flex;
+    /* overflow: auto; */
+}
+.featured-card {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust the width as needed */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #000 ;
+    border-radius: 20px;
+}
+
+
+.featured-card img {
+    max-width: 50%; /* Ensure the image fits within the card */
+    height:200px; 
+    background-size: cover;
+    /* Maintain aspect ratio */
+}
+/* Add this to your styles.css */
+
+.featured-card.clicked {
+    transform: scale(1.05); /* Increase the card size on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+/* 
+*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    /* background: #da2424; */
+    background-image: url("movie.jpg");
+    background-size: cover;
+    color: white;
+    padding: 20px 0;
+}
+
+.header p {
+    font-weight: bolder;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.featured-content {
+    display: flex;
+}
+
+.featured-card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #000;
+    border-radius: 20px;
+}
+
+.featured-card:hover, .featured-card.clicked {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.featured-card img {
+    max-width: 50%;
+    height: 200px;
+    background-size: cover;
+}
+
+/* Add the restaurant-listings styles here as previously provided */
+button{
+    background-color: #000;
+    color: white;
+    border-radius: 25%;
+    padding: 6px;
+    border: 2px solid black;
+}
+.trending-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending-card {
+    flex: 0 0 calc(20% - 20px); /* Adjust the width as needed and add margin if desired */
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trending-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.trending-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.trending-card button {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.trending-card{
+    background-color: #000;
+}
